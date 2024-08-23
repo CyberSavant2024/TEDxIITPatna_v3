@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 }
 
 .landing.mobile .countdown-container{
@@ -149,11 +150,18 @@
 }
 .gra{
    
-
+        margin-top: 6rem;
     z-index:1;
-    display:flex;
    
-    flex-direction:column;
+    display: flex;
+            justify-content: center;
+            align-items: center;
     
     
+}
+.centre{
+    
+}
+body{
+    overflow-x: hidden;
 }

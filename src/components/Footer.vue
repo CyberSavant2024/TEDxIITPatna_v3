@@ -26,6 +26,7 @@
 
 <template>
   <!-- <img src="@/assets/images/footerimg.png" class="footer-img"> -->
+  
   <footer class="footer">
     <div class="logo">
       <img src="@/assets/images/tedx_iitplogo2023.png" style="height:70px;margin-top:2vh;margin-left:4vh;">
@@ -43,7 +44,7 @@
       </div> -->
 
       <div class="socials" >
-        <span style="font-size: 24px;"> Social media handles </span>
+        <span class="socialmedia" style="font-size: 24px;"> Social media</span>
         
         <div class="links">
 
@@ -80,6 +81,7 @@
     <div class="disclaimer">This independent TEDx event is operated under license from TED.</div>
 
   </footer>
+
 </template>
 
 <script>

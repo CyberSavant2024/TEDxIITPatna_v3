@@ -11,7 +11,7 @@ footer {
         "disclaimer disclaimer"
     ;
     width: 100%;
-    padding: 0% 8%;
+ 
     margin: 0;
     color: white;
     background-color: black;
@@ -60,9 +60,12 @@ footer .left-wrapper {
     grid-template-areas:
         "nav misc"
         "socials socials"
+       
     ;
-    grid-gap: 1rem;
+    
+    
     grid-template-rows: auto;
+  
 }
 
 /* .nav-links are links to other pages in site */
@@ -160,25 +163,37 @@ footer .socials .link:hover .name {
 footer .disclaimer {
     grid-area: disclaimer;
     font-size: 19px;
+    
 
     padding: 2%;
-    margin-left:-2rem ;
+  
     text-transform: capitalize;
 }
 
 /* mobile view */
 @media only screen and (max-width: 1000px){
+    .center{
+        display: flex ;
+        justify-content: center;
+    }
+
+
+
     footer {
+       
+        
         grid-template-areas:
             "logo logo"
             "map map"
-            "links links "
+            "links socials "
+          
             "disclaimer disclaimer"
         ;
-        padding: 0 5%;
-        coloumn-gap:rem;
+       
+      
        place-items: center;
         place-content: center;
+
     }
     footer .Map {
         justify-content: center;
@@ -197,21 +212,40 @@ footer .disclaimer {
     footer .left-wrapper {
         margin-top: 3rem;
        
-        width: 30%;
-        place-content: center;
+       width: 80%;
+    
+       
+       
       
         
     }
     footer .nav-links {
         align-items: flex-end;
+        display: flex;
+      
         text-align: right;
+        justify-content: center;  
      
        
     }
     footer .socials {
-     margin-left: 2rem;
+        margin-left: -0.5rem;
+     
 
         
        
+    }
+    footer .socials .socialmedia{
+       margin-left: 1rem;
+    }
+
+   
+    .disclaimer{
+      
+      width: 80%;
+       text-align: center;
+       justify-content: center;
+   
+  
     }
 }
